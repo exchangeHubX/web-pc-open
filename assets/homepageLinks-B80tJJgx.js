@@ -1,0 +1,1 @@
+const e={google:"https://google.com",apple:"https://apple.com",telegram:"https://telegram.org",app:"https://example.com/app-download",ios:"https://example.com/app-ios",android:"https://example.com/app-android",googlePlay:"https://play.google.com/store/apps/details?id=com.example.app"};function t(o){const p=e[o]?.trim();return p||void 0}export{t as g};
