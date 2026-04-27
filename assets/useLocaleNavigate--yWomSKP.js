@@ -1,1 +1,0 @@
-import{r}from"./react-vendor-CzAKBiia.js";import{x as c,y as l}from"./index-BtWUTtxK.js";import{a as i}from"./router-Bxz-AKJS.js";function f(){const{locale:o}=c(),a=i();return r.useCallback((e,t)=>{if(typeof e=="number")a(e);else{const s=l(e,o);a(s,t)}},[o,a])}export{f as u};
