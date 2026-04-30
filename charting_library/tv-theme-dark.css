@@ -1,0 +1,113 @@
+/* TradingView 深色主题 - 完整覆盖
+   bg-primary  #070808 | bg-secondary #10151a | bg-tertiary  #182028
+   bg-quarter  #212c35 | border       #28323a | text-primary #f2f5f7
+   text-sec    #96a2ab | text-ter     #66717b
+   green       #0ecb81 | red          #f6465d
+*/
+
+/* ── TradingView CSS 变量（v25+） ────────────────── */
+:root, html {
+  /* 平台 / 面板背景 */
+  --tv-color-platform-background:                      #070808;
+  --tv-color-pane-background:                          #070808;
+
+  /* 工具栏按钮 */
+  --tv-color-toolbar-button-background-secondary:      #10151a;
+  --tv-color-toolbar-button-background-expanded:       #10151a;
+  --tv-color-toolbar-button-background-active:         #212c35;
+  --tv-color-toolbar-button-background-active-hover:   #182028;
+  --tv-color-toolbar-button-background-hover:          #182028;
+  --tv-color-toolbar-button-text:                      #96a2ab;
+  --tv-color-toolbar-button-text-hover:                #f2f5f7;
+  --tv-color-toolbar-button-text-active:               #f2f5f7;
+  --tv-color-toolbar-button-text-active-hover:         #f2f5f7;
+
+  /* 分隔线 */
+  --tv-color-toolbar-divider-background:               #28323a;
+  --tv-color-toolbar-toggle-button-background-active:  #212c35;
+  --tv-color-toolbar-toggle-button-background-inactive: #10151a;
+
+  /* 弹出/下拉 */
+  --tv-color-popup-background:                         #10151a;
+  --tv-color-popup-element-background:                 #10151a;
+  --tv-color-popup-element-background-hover:           #182028;
+  --tv-color-popup-element-text:                       #96a2ab;
+  --tv-color-popup-element-text-hover:                 #f2f5f7;
+  --tv-color-popup-element-secondary-text:             #66717b;
+  --tv-color-popup-element-hint-text:                  #66717b;
+  --tv-color-popup-element-toolbox-text:               #96a2ab;
+  --tv-color-popup-element-toolbox-text-hover:         #f2f5f7;
+  --tv-color-popup-element-toolbox-background-hover:   #182028;
+  --tv-color-popup-element-separator-line:             #28323a;
+
+  /* 对话框 */
+  --tv-color-dialog-background:                        #10151a;
+  --tv-color-dialog-border:                            #28323a;
+
+  /* 文字 */
+  --tv-color-item-active-text:                         #f2f5f7;
+  --tv-color-item-text:                                #96a2ab;
+
+  /* 输入框 */
+  --tv-color-input-text:                               #f2f5f7;
+  --tv-color-input-border:                             #28323a;
+  --tv-color-input-border-active:                      #66717b;
+  --tv-color-input-background:                         #070808;
+}
+
+/* ── 顶部 header ─────────────────────────────── */
+[data-name="header-chart-panel"] {
+  background-color: #10151a !important;
+  border-bottom: 1px solid #28323a !important;
+}
+[data-name="header-toolbar"] {
+  background-color: #10151a !important;
+}
+
+/* ── 左侧画线工具栏 ───────────────────────────── */
+[data-name="drawing-toolbar"] {
+  background-color: #10151a !important;
+  border-right: 1px solid #28323a !important;
+}
+
+/* ── 底部工具栏（时间范围 5Y/1Y/6min 等） ─────────── */
+[data-name="date-ranges-menu"] {
+  background-color: #10151a !important;
+  border-top: 1px solid #28323a !important;
+}
+[data-name^="date-range-tab-"] {
+  background-color: transparent !important;
+}
+[data-name^="date-range-tab-"][class*="isActive"] {
+  background-color: #212c35 !important;
+}
+
+/* ── 弹出/下拉 ────────────────────────────────── */
+[data-role="popup"],
+[data-name="popup"] {
+  background-color: #10151a !important;
+  border: 1px solid #28323a !important;
+}
+
+/* ── iframe 文档底色（转圈消失→数据出现的中间状态） ── */
+html, body {
+  background-color: #070808 !important;
+}
+
+/* ── 硬编码背景层（不走 CSS 变量，需单独覆盖） ────── */
+/* loading-indicator: z-index:150，spinner 消失后图表渲染前可见 */
+/* chart-container-border: 图表边框背景 */
+.loading-indicator,
+.chart-container-border {
+  background-color: #070808 !important;
+}
+
+/* ── 图表加载层背景（保持同色，不阻断 TV 自身 fade-out） */
+.screen-otjoFNF2,
+[class*="screen-"][class*="fade-"] {
+  background-color: #070808 !important;
+}
+
+
+
+
