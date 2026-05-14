@@ -1,0 +1,1 @@
+import{r as o}from"./react-vendor-CzAKBiia.js";function i(e,t=300){const[r,s]=o.useState(!1);return o.useEffect(()=>{if(e){const u=setTimeout(()=>{s(!0)},t);return()=>clearTimeout(u)}else s(!1)},[e,t]),r}export{i as u};
